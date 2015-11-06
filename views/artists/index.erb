@@ -1,7 +1,9 @@
 <h1>The greatest music library of all time!</h1>
+<a href="artists/new">Add New Artist</a>
 
 <% @artists.each do |artist| %>
-  <p><%= artist.name %></p>
-<% end %>
+  <p><a href="artists/<%= artist.id%>"><%= artist.name %></a></p>
 
-<a href="artists/new">Add New Artist</a>
+<!--  <img src="<%= artist.photo_url%>"> -->
+
+<% end %>
